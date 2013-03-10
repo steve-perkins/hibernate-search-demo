@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 3.0 License
+
+Name       : Unofficial Channels
+Description: A two-column, fixed-width design with a bright color scheme.
+Version    : 1.0
+Released   : 20120723
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>
+			VAPORware Marketplace
+		</title>
+
+		<link type="text/css" href="css/custom-theme/jquery-ui-1.8.24.custom.css" rel="stylesheet" />
+		<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+
+		<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.24.custom.min.js"></script>
+		<script language="JavaScript">
+			
+			// Put the active cursor on the search box when the page first loads
+			$(function() {
+				$("#searchString").focus();
+			});
+			
+			// When the search button is clicked, ensure that the search box is not empty and then submit the search form
+			function submitSearchForm() {
+				var searchString = $("#searchString").val();
+				if(searchString == null || searchString.replace(/^\s+|\s+$/g, '') == "") {
+					alert("You must enter some search words");
+				} else {
+					$("#searchForm").submit();
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="bg1"></div>
+		<div id="bg2"></div>
+		<div id="outer">
+			<div id="header">
+				<div id="logo">
+					<h1><a href="index.html"><i>VAPORware</i> Marketplace</a></h1>
+				</div>
+				<form id="searchForm" action="search" method="post">
+					<div id="search">
+						<div>
+							<label for="selectedDevice">Search by device:</label>
+							<select id="selectedDevice" name="selectedDevice">
+								<option value="all" selected="selected">All Devices</option>
+								<option value="xPhone">Orange xPhone</option>
+								<option value="xTablet">Orange xTablet</option>
+								<option value="Solar System Phone">Song-Sung Solar System Phone</option>
+								<option value="Flame Book Reader">Jungle Flame Book Reader</option>
+								<option value="Personal Computer">Personal Computer</option>
+							</select>
+							<input class="text" id="searchString" name="searchString" size="32" maxlength="64" />
+							<img src="images/search.png" style="margin: -13px;" onclick="submitSearchForm()"/>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div id="banner">
+				<div class="captions">
+					<h2><i>The</i>&nbsp;&nbsp;source for apps that may or may not ever be developed</h2>
+				</div>
+				<img src="images/banner.jpg" alt="" height="150" width="1180"/>
+			</div>
+			<div id="main">
+				<div id="sidebar">
+					<div class="box">
+						<h3>Upcoming Releases</h3>
+						<div class="dateList">
+							<ul class="linkedList dateList">
+								<li class="first">
+									<span class="date">Jul 23</span> Frustrated Flamingos
+								</li>
+								<li>
+									<span class="date">Jul 28</span> Athena Internet Radio
+								</li>
+								<li>
+									<span class="date">Aug 7</span> Dome Web Browser
+								</li>
+								<li>
+									<span class="date">Aug 9</span> Gripe Video Conferencing
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="content">
+					<div class="box">
+						<h2>Welcome to the <i>VAPORware</i> Marketplace</h2>
+						<img src="images/appguy.jpg" width="100" height="150" alt="" class="left" />
+						<p>
+							The <i>VAPORware</i> Marketplace is your source for the hottest imaginary mobile applications that 
+							haven't quite been developed yet in the real world.  To search this fictional app directory, just enter 
+							your keywords in the upper-right box.  
+						</p>
+						<p>
+							Our imaginary prices can't be beat!  We hope that you enjoy pretending to download our fake apps to 
+							your pretend mobile device.
+						</p>
+					</div>
+					<div class="box">
+						<h3>Additional text that no one reads!</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius, augue non fermentum 
+							fermentum, erat magna convallis urna, ac eleifend arcu lorem eu tellus. Aenean ligula turpis, 
+							pharetra eget vestibulum a, venenatis sed leo. Etiam varius eleifend tincidunt. Phasellus ac nulla 
+							magna. Quisque vitae sem enim. Maecenas consectetur ipsum sit amet massa iaculis vel malesuada 
+							augue fringilla. Nullam molestie arcu non enim vulputate rhoncus. Vestibulum lacinia felis vel nisi 
+							adipiscing a congue velit consequat. Aliquam ipsum lorem, condimentum vitae congue a, lacinia vel 
+							dolor. Sed quis nunc arcu, sit amet facilisis lectus. Fusce viverra urna nunc. Donec a tellus sit 
+							amet est auctor dignissim vel tempus metus. Nullam pulvinar ornare turpis. Ut dictum tortor vitae 
+							velit elementum in tincidunt neque posuere. 
+						</p>
+						<ul class="linkedList">
+							<li class="first">
+								<a href="#">Turpis et posuere urna dolor justo</a>
+							</li>
+							<li>
+								<a href="#">Fringilla sem nisl purus lobortis magnis magna pellentesque</a>
+							</li>
+							<li>
+								<a href="#">Venenatis magna ultricies sollicitudin sodales commodo nibh aenean</a>
+							</li>
+							<li>
+								<a href="#">Magnis luctus penatibus non natoque nascetur tempus erat</a>
+							</li>
+							<li class="last">
+								<a href="#">Penatibus dolor pharetra viverra ac erat proin</a>
+							</li>
+						</ul>
+					</div><br class="clear" />
+				</div><br class="clear" />
+			</div>
+		</div>
+		<div id="copyright">
+			This application uses HTML/CSS design from <a href="http://www.freecsstemplates.org/">freecsstemplates.org</a>, 
+			and photos by <a href="http://fotogrph.com/">Fotogrph</a>, both made available under the 
+			<a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution license</a>.
+		</div>
+	</body>
+</html>
