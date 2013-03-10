@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar target\dependency\jetty-runner-8.1.7.v20120910.jar --lib target/hibernate-search-demo-0.0.1-SNAPSHOT/WEB-INF/lib --port $PORT --jdbc org.apache.commons.dbcp.BasicDataSource "url=jdbc:h2:mem:vaporware;DB_CLOSE_DELAY=-1" "jdbc/vaporwareDB" target/*.war
+web: java $JAVA_OPTS -jar target/dependency/jetty-runner-8.1.7.v20120910.jar --lib target/hibernate-search-demo-0.0.1-SNAPSHOT/WEB-INF/lib --port $PORT --jdbc org.apache.commons.dbcp.BasicDataSource "url=jdbc:h2:mem:vaporware;DB_CLOSE_DELAY=-1" "jdbc/vaporwareDB" target/*.war
